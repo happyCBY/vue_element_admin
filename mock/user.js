@@ -23,6 +23,126 @@ const users = {
   }
 }
 
+const demo = [
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  },
+  {
+    Userid: '1',
+    Mobile: '2',
+    Phone: '3',
+    recommender: '4',
+    registrationTime: '5',
+    recommenderAll: '6',
+    recommenderIndirect: '7'
+  }
+]
+
 export default [
   // user login
   {
@@ -78,6 +198,18 @@ export default [
       return {
         code: 20000,
         data: 'success'
+      }
+    }
+  },
+
+  // demo
+  {
+    url: '/user/getlist',
+    type: 'get',
+    response: _ => {
+      return {
+        code: 20000,
+        data: demo
       }
     }
   }

@@ -6,6 +6,8 @@ Vue.use(Router)
 /* Layout */
 import Layout from '@/layout'
 
+console.log(Layout)
+
 /* Router Modules */
 import componentsRouter from './modules/components'
 import chartsRouter from './modules/charts'
@@ -96,16 +98,47 @@ export const constantRoutes = [
     ]
   },
   {
+
     path: '/guide',
     component: Layout,
     redirect: '/guide/index',
+    name: 'demo',
+    meta: { title: 'demo', icon: 'guide' },
     children: [
       {
         path: 'index',
         component: () => import('@/views/guide/index'),
         name: 'Guide',
-        meta: { title: 'Guide', icon: 'guide', noCache: true }
+        meta: { title: 'Guide', noCache: true }
+      },
+      {
+        path: 'InvitationList',
+        component: () => import('@/views/guide/InvitationList'),
+        name: 'InvitationList',
+        meta: { title: 'InvitationList', noCache: true }
+      },
+      {
+        path: 'Regional-configuration',
+        component: () => import('@/views/guide/Regional-configuration'),
+        name: 'Regional-configuration',
+        meta: { title: 'Regional-configuration', noCache: true }
+      },
+      {
+        path: 'AddQyPeo',
+        component: () => import('@/views/guide/AddQyPeo'),
+        name: 'AddQyPeo'
+      },
+      {
+        path: 'updataMsg',
+        component: () => import('@/views/guide/updataMsg'),
+        name: 'updataMsg'
+      },
+      {
+        path: 'details/:id',
+        component: () => import('@/views/guide/details'),
+        name: 'details'
       }
+
     ]
   },
   {

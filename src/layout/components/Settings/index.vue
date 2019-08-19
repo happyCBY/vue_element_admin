@@ -60,6 +60,8 @@ export default {
     },
     sidebarLogo: {
       get() {
+        console.log(this.$store.state.settings.sidebarLogo)
+
         return this.$store.state.settings.sidebarLogo
       },
       set(val) {
@@ -82,6 +84,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.demo {
+  margin-top:100px;
+}
+
 .drawer-container {
   padding: 24px;
   font-size: 14px;

@@ -1,0 +1,28 @@
+.filter-container {
+    padding-bottom: 10px;
+  }
+.filter-container .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+.mgL {
+  margin-left: 15px;
+  vertical-align: top;
+}
+
+.mgBL {
+  margin-left: 30px;
+}
+
+.mgR {
+  margin-right: 10px;
+}
+
+.mgT20 {
+  margin-top: 20px;
+}
+
+span a, a:hover, a:focus {
+  color: #0d94c1;
+}

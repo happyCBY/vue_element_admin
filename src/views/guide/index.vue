@@ -8,6 +8,8 @@
     <el-button icon="el-icon-question" type="primary" @click.prevent.stop="guide">
       Show Guide
     </el-button>
+    <pagination />
+
   </div>
 </template>
 
@@ -30,6 +32,7 @@ export default {
     guide() {
       this.driver.defineSteps(steps)
       this.driver.start()
+      this.driver.highlight('#ssqq')
     }
   }
 }

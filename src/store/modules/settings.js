@@ -13,6 +13,8 @@ const state = {
 
 const mutations = {
   CHANGE_SETTING: (state, { key, value }) => {
+    console.log(state.hasOwnProperty)
+    // hasOwnProperty 判断state是否有这个属性
     if (state.hasOwnProperty(key)) {
       state[key] = value
     }
@@ -31,4 +33,3 @@ export default {
   mutations,
   actions
 }
-

@@ -191,10 +191,10 @@ export default {
       listQuery: {
         page: 1,
         limit: 20,
-        importance: undefined,
-        title: undefined,
-        type: undefined,
-        sort: '+id'
+        importance: '',
+        title: '',
+        type: ''
+        // sort: '+id'
       },
       importanceOptions: [1, 2, 3],
       calendarTypeOptions,
@@ -233,6 +233,9 @@ export default {
     getList() {
       this.listLoading = true
       fetchList(this.listQuery).then(response => {
+        console.log(this.listQuery)
+
+        console.log(response)
         this.list = response.data.items
         this.total = response.data.total
 

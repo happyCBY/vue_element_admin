@@ -151,6 +151,7 @@ export default {
       }
     },
     showPwd() {
+      console.log(55)
       if (this.passwordType === 'password') {
         this.passwordType = ''
       } else {
